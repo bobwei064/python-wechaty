@@ -1,8 +1,6 @@
 name: wechaty
 image: python:3.9
 command: tail -f /dev/null
-volume:
-  - .:/app
+volume: /app
 workdir: /app
-ports:
-  - 3000:3000
+ports: 3000:3000
